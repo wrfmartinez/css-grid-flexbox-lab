@@ -24,13 +24,14 @@ a {
 
 /* BUTTONS */
 
-.buttons button {
+button {
   width: 200px;
   height: 60px;
   font-size: 17px;
   margin-right: 30px;
   border: solid var(--primary-color) 1px;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .btn-black {
@@ -38,7 +39,7 @@ a {
   color: #ffffff;
 }
 
-.buttons button:hover {
+button:hover {
   cursor: pointer;
   transition: 0.1s;
   color: #5f5f5f;
@@ -46,18 +47,24 @@ a {
   border-width: 1.5px;
 }
 
-.buttons button.btn-black:hover {
+button.btn-black:hover {
   color: #f8f8f8;
 }
 
 /* CARDS */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 60px;
+}
 
 /* FIRST CARD */
 .first-card {
   height: 436px;
   width: 270px;
   background-color: #000000;
-  margin-top: 60px;
 }
 
 div.first-card div.tp-card-section {
@@ -97,3 +104,49 @@ div.btm-card-section a:hover {
 }
 
 /* SECOND CARD */
+.second-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 270px;
+  height: 420px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.second-card .tp-card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  background-color: #000000;
+  padding: 25px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.second-card .card-title, .second-card .card-subtitle {
+  margin: 12px 0 0 0;
+}
+
+.second-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.second-card ul li {
+  color: #8f8f8f;
+  margin-top: 17px;
+  font-size: 14px;
+}
+
+.second-card button {
+  width: 165px;
+  height: 42px;
+  font-size: 14px;
+  margin: 0;
+}
