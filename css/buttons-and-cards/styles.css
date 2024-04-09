@@ -3,7 +3,7 @@
 body {
   --primary-color: #1A181B;
   --secondary-color: #8755d6;
-  margin: 67px 0 0 60px;
+  margin: 67px 60px 0 60px;
   font-family: 'Roboto', sans-serif;
   background-color: #F2F2F2;
   font-weight: 400;
@@ -60,7 +60,7 @@ button.btn-black:hover {
   margin: 60px 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   header {
     text-align: center;
   }
